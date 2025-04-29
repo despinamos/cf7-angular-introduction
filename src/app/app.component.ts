@@ -4,23 +4,25 @@ import { PersonTableComponent } from './components/person-table/person-table.com
 import { Person } from './shared/interfaces/person';
 import { EventBindExampleComponent } from './components/event-bind-example/event-bind-example.component';
 import { RouterLink } from '@angular/router';
+import { ListGroupMenuComponent } from './components/list-group-menu/list-group-menu.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, RouterLink],
+  imports: [RouterOutlet, ListGroupMenuComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  name = 'Des';
+  
+  // name = 'Des';
 
-  // Step 1: One way binding of data
-  person = {
-    givenName: 'Des',
-    surName: 'M.',
-    age: 25,
-    email: 'des@aueb.gr'
-  }
+  // // Step 1: One way binding of data
+  // person = {
+  //   givenName: 'Des',
+  //   surName: 'M.',
+  //   age: 25,
+  //   email: 'des@aueb.gr'
+  // }
 
   // // Step 3: Component Input
 
